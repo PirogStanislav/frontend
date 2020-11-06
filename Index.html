@@ -1,0 +1,473 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>HTML5</title>
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+
+ </head>
+ <body>
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Имя</th>
+      <th scope="col">Фамилия</th>
+      <th scope="col">Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+ </body>
+</html>
+<div class='resizable1'>
+
+        <div class='resizers'>
+            <div class='resizer top-left'></div>
+            <div class='resizer top-right'></div>
+            <div class='resizer bottom-left'></div>
+            <div class='resizer bottom-right'></div>
+            <form>
+                <label for="myBrowser">Choose a browser from this list:</label>
+                <input list="browsers" id="myBrowser" name="q2" placeholder="Введіть код товару"/>
+                <datalist id="browsers">
+                    <option value="11111"></option>
+                    <option value="2222222"></option>
+                    <option value="23232323"></option>
+                    <option value="3333333333333"></option>
+                    <option value="123"></option>
+                    <option value="232323"></option>
+                </datalist>
+                    <input type="submit" value="Знайти">
+
+
+
+
+            </form>
+            
+           </div>
+        </div>
+        <div class='resizable2'>
+
+            <div class='resizers'>
+                <div class='resizer top-left'></div>
+                <div class='resizer top-right'></div>
+                <div class='resizer bottom-left'></div>
+                <div class='resizer bottom-right'></div>
+                <table width="50%" border="1">
+                    <tr>
+                        <th>Номер</th>
+                        <th>Назва</th>
+                        <th>Кількість</th>
+                    </tr>
+                    <tr>
+                        <td>&nbsp </td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td> &nbsp</td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td> &nbsp</td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td> &nbsp</td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td> &nbsp</td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                </table>
+                <div class="product-item">
+                    <img src="https://html5book.ru/wp-content/uploads/2015/10/black-dress.jpg">
+                    <div class="product-list">
+                        <h3>Маленькое черное платье</h3>
+                        <span class="price">₽ 1999</span>
+                        <a href="" class="button">В корзину</a>
+                    </div>
+                </div>
+                </div>
+                <footer> Сума:</footer>
+            </div>
+           
+        </div>
+        <div class='resizable'>
+
+            <div class='resizers'>
+                <div class='resizer top-left'></div>
+                <div class='resizer top-right'></div>
+                <div class='resizer bottom-left'></div>
+                <div class='resizer bottom-right'></div>
+               
+                    
+                        <div id="SECTION_2">
+                            <div id="DIV_3">
+                                <button id="BUTTON_1">
+                                   Замовити
+                                </button>
+                            </div>
+                            <div id="DIV_4">
+                                <button id="BUTTON_1">
+                                    Додати товар
+                                </button>
+                            </div>
+                        </div>
+
+                
+                </div>
+
+        </div>
+
+        <style>
+            body, html {
+                background: white;
+            }
+            .flex {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            #SECTION_2 {
+                display: inline-block;
+                text-align: center;
+                padding: 15px;
+                width: 98%;
+            }
+
+            #BUTTON_1 {
+                display: inline-block;
+                vertical-align: top; /* fixed */
+                padding: 1%;
+                font-size: calc( (100vw - 240px)/(1100 - 240) * (20 - 8) + 8px);
+                background-color: blue;
+                color: rgb(255, 255, 255);
+                cursor: pointer;
+                width: 85%;
+                min-height: 50px;
+            }
+
+            #DIV_3 {
+                display: inline-block;
+                width: 30%;
+                margin: auto;
+            }
+
+            #DIV_4 {
+                display: inline-block;
+                width: 30%;
+                margin: auto;
+            }
+
+            .resizable {
+                background: black;
+                width: 400px;
+                height: 400px;
+                position: absolute;
+                top: 400px;
+                left: 600px;
+            }
+
+                .resizable .resizers {
+                    width: 100%;
+                    height: 100%;
+                    border: 3px solid #4286f4;
+                }
+
+                    .resizable .resizers .resizer {
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background: white;
+                        border: 3px solid #4286f4;
+                        position: absolute;
+                    }
+
+                        .resizable .resizers .resizer.top-left {
+                            left: -5px;
+                            top: -5px;
+                            cursor: nwse-resize; /*resizer cursor*/
+                        }
+
+                        .resizable .resizers .resizer.top-right {
+                            right: -5px;
+                            top: -5px;
+                            cursor: nesw-resize;
+                        }
+
+                        .resizable .resizers .resizer.bottom-left {
+                            left: -5px;
+                            bottom: -5px;
+                            cursor: nesw-resize;
+                        }
+
+                        .resizable .resizers .resizer.bottom-right {
+                            right: -5px;
+                            bottom: -5px;
+                            cursor: nwse-resize;
+                        }
+
+            .resizable1 {
+                background: black;
+                width: 550px;
+                height: 100px;
+                position: absolute;
+                top: 60px;
+                left: 30px;
+            }
+
+                .resizable1 .resizers{
+                    width: 100%;
+                    height: 100%;
+                    border: 3px solid #4286f4;
+                }
+
+                    .resizable1 .resizers .resizer {
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background: white;
+                        border: 3px solid #4286f4;
+                        position: absolute;
+                    }
+
+                        .resizable1 .resizers .resizer.top-left {
+                            left: -5px;
+                            top: -5px;
+                            cursor: nwse-resize; /*resizer cursor*/
+                        }
+
+                        .resizable1 .resizers .resizer.top-right {
+                            right: -5px;
+                            top: -5px;
+                            cursor: nesw-resize;
+                        }
+
+                        .resizable1 .resizers .resizer.bottom-left {
+                            left: -5px;
+                            bottom: -5px;
+                            cursor: nesw-resize;
+                        }
+
+                        .resizable1 .resizers .resizer.bottom-right {
+                            right: -5px;
+                            bottom: -5px;
+                            cursor: nwse-resize;
+                        }
+            .resizable2 {
+                background: white;
+                width: 550px;
+                height: 400px;
+                position: absolute;
+                top: 200px;
+                left: 30px;
+            }
+
+                .resizable2 .resizers {
+                    width: 100%;
+                    height: 100%;
+                    border: 3px solid #4286f4;
+                }
+
+                    .resizable2 .resizers .resizer {
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background: white;
+                        border: 3px solid #4286f4;
+                        position: absolute;
+                    }
+
+                        .resizable2 .resizers .resizer.top-left {
+                            left: -5px;
+                            top: -5px;
+                            cursor: nwse-resize; /*resizer cursor*/
+                        }
+
+                        .resizable2 .resizers .resizer.top-right {
+                            right: -5px;
+                            top: -5px;
+                            cursor: nesw-resize;
+                        }
+
+                        .resizable2 .resizers .resizer.bottom-left {
+                            left: -5px;
+                            bottom: -5px;
+                            cursor: nesw-resize;
+                        }
+
+                        .resizable2 .resizers .resizer.bottom-right{
+                            right: -5px;
+                            bottom: -5px;
+                            cursor: nwse-resize;
+                        }
+            * {
+                box-sizing: border-box;
+            }
+
+            .product-item {
+                width: 300px;
+                text-align: center;
+                margin: 0 auto;
+                border-bottom: 2px solid #F5F5F5;
+                background: white;
+                font-family: "Open Sans";
+                transition: .3s ease-in;
+            }
+
+                .product-item:hover {
+                    border-bottom: 2px solid #fc5a5a;
+                }
+
+                .product-item img {
+                    display: block;
+                    width: 100%;
+                }
+
+            .product-list {
+                background: #fafafa;
+                padding: 15px 0;
+            }
+
+                .product-list h3 {
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: #444444;
+                    margin: 0 0 10px 0;
+                }
+
+            .price {
+                font-size: 16px;
+                color: #fc5a5a;
+                display: block;
+                margin-bottom: 12px;
+            }
+
+            .button {
+                text-decoration: none;
+                display: inline-block;
+                padding: 0 12px;
+                background: #cccccc;
+                color: white;
+                text-transform: uppercase;
+                font-size: 12px;
+                line-height: 28px;
+                transition: .3s ease-in;
+            }
+
+            .product-item:hover .button {
+                background: #fc5a5a;
+            }
+        </style>
+        <script>
+
+            function makeResizableDiv(div) {
+                const element = document.querySelector(div);
+                const resizers = document.querySelectorAll(div + ' .resizer')
+                const minimum_size = 20;
+                let original_width = 0;
+                let original_height = 0;
+                let original_x = 0;
+                let original_y = 0;
+                let original_mouse_x = 0;
+                let original_mouse_y = 0;
+                for (let i = 0; i < resizers.length; i++) {
+                    const currentResizer = resizers[i];
+                    currentResizer.addEventListener('mousedown', function (e) {
+                        e.preventDefault()
+                        original_width = parseFloat(getComputedStyle(element, null).getPropertyValue('width').replace('px', ''));
+                        original_height = parseFloat(getComputedStyle(element, null).getPropertyValue('height').replace('px', ''));
+                        original_x = element.getBoundingClientRect().left;
+                        original_y = element.getBoundingClientRect().top;
+                        original_mouse_x = e.pageX;
+                        original_mouse_y = e.pageY;
+                        window.addEventListener('mousemove', resize)
+                        window.addEventListener('mouseup', stopResize)
+                    })
+
+                    function resize(e) {
+                        if (currentResizer.classList.contains('bottom-right')) {
+                            const width = original_width + (e.pageX - original_mouse_x);
+                            const height = original_height + (e.pageY - original_mouse_y)
+                            if (width > minimum_size) {
+                                element.style.width = width + 'px'
+                            }
+                            if (height > minimum_size) {
+                                element.style.height = height + 'px'
+                            }
+                        }
+                        else if (currentResizer.classList.contains('bottom-left')) {
+                            const height = original_height + (e.pageY - original_mouse_y)
+                            const width = original_width - (e.pageX - original_mouse_x)
+                            if (height > minimum_size) {
+                                element.style.height = height + 'px'
+                            }
+                            if (width > minimum_size) {
+                                element.style.width = width + 'px'
+                                element.style.left = original_x + (e.pageX - original_mouse_x) + 'px'
+                            }
+                        }
+                        else if (currentResizer.classList.contains('top-right')) {
+                            const width = original_width + (e.pageX - original_mouse_x)
+                            const height = original_height - (e.pageY - original_mouse_y)
+                            if (width > minimum_size) {
+                                element.style.width = width + 'px'
+                            }
+                            if (height > minimum_size) {
+                                element.style.height = height + 'px'
+                                element.style.top = original_y + (e.pageY - original_mouse_y) + 'px'
+                            }
+                        }
+                        else {
+                            const width = original_width - (e.pageX - original_mouse_x)
+                            const height = original_height - (e.pageY - original_mouse_y)
+                            if (width > minimum_size) {
+                                element.style.width = width + 'px'
+                                element.style.left = original_x + (e.pageX - original_mouse_x) + 'px'
+                            }
+                            if (height > minimum_size) {
+                                element.style.height = height + 'px'
+                                element.style.top = original_y + (e.pageY - original_mouse_y) + 'px'
+                            }
+                        }
+                    }
+
+                    function stopResize() {
+                        window.removeEventListener('mousemove', resize)
+                    }
+                }
+            }
+
+            makeResizableDiv('.resizable')
+            makeResizableDiv('.resizable1')
+            makeResizableDiv('.resizable2')
+
+        </script>
